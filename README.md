@@ -16,3 +16,9 @@ The Windows backup and restore scripts do the following…
 9. Resets power plan
 10. Calculates and tells you total size backed up out of total to transfer (to quickly identify if something may have failed)
 11. Logs everything into X:\Script logs\
+
+
+Instructions for use
+1. Place both scripts on to an external drive to backup onto
+2. Run Old_PC_Export.ps1 on the computer user you want to backup
+3. Run New_PC_Import.ps1 on computer you want to restore user data onto
