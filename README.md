@@ -5,16 +5,14 @@ The windows scripts can be used for migrations from an old Windows computer to a
 
 The Windows backup and restore scripts do the following…
 
-Sets power plan to prevent computer going to sleep during transfer (Unless locked by group policy)
-Lists the location of the directories; Documents, Desktop, Downloads, Pictures, Music, Videos and detects if these are local, in OneDrive or on a network location
-Asks whether you want to force the copy of files from OneDrive or network share e.g. The old PC has folder redirects to a network location but you want the files locally on the new computer
-Checks sufficient space on the external drive for all data calculated to transfer
-Creates folder on root of external drive named “$Username - $Date” e.g. bonja007 – 28.6.22
-Begins copying data from
-%appdata%\Microsoft\{Outlook, Templates, Signatures, Themes}
-Desktop, Documents, Downloads, Pictures, Videos and Music
-Edge, Chrome and Firefox bookmarks
-Stores list of installed printers and mapped network shares into .txt files
-Resets power plan
-Calculates and tells you total size backed up out of total to transfer (to quickly identify if something may have failed)
-Logs everything into X:\Script logs\
+1. Sets power plan to prevent computer going to sleep during transfer (Unless locked by group policy)
+2. Lists the location of the directories; Documents, Desktop, Downloads, Pictures, Music, Videos and detects if these are local, in OneDrive or on a network location
+3. Asks whether you want to force the copy of files from OneDrive or network share e.g. The old PC has folder redirects to a network location but you want the files locally on the new computer
+4. Checks sufficient space on the external drive for all data calculated to transfer
+5. Creates folder on root of external drive named “$Username - $Date” e.g. bonja007 – 28.6.22
+6. Begins copying data from %appdata%\Microsoft\{Outlook, Templates, Signatures, Themes} Desktop, Documents, Downloads, Pictures, Videos and Music 
+7. Edge, Chrome and Firefox bookmarks
+8. Stores list of installed printers and mapped network shares into .txt files
+9. Resets power plan
+10. Calculates and tells you total size backed up out of total to transfer (to quickly identify if something may have failed)
+11. Logs everything into X:\Script logs\
